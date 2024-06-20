@@ -1,0 +1,888 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body>section {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+}
+
+/* header */
+.header {
+    height: 100vh;
+    background: url("https://www.dingtea.com/upload/banner_list/enL_banner_19K21_mv3fan89fx.jpg") no-repeat top left;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.header nav {
+    width: 100%;
+    max-width: 100%;
+}
+
+.navbar .container {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    height: 100px;
+    max-width: 100%;
+    width: 100%;
+    transform: translateX(-50%);
+    z-index: 100;
+    transition: transform 0.5s ease;
+}
+
+.navbar__container--wrapper {
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 40px;
+    display: none;
+}
+
+.navbar-nav {
+    margin-right: 0 !important;
+    width: 100%;
+}
+
+.nav-link {
+    line-height: 85px;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #e1d9cb;
+}
+
+.nav-link:hover {
+    color: white !important;
+}
+
+.nav-link img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-menu {
+    top: 70% !important;
+    background-color: transparent;
+    border-color: #343434;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #e1d9cb;
+}
+
+.banner {
+    height: auto;
+    overflow: hidden;
+}
+
+.banner img {
+    position: absolute;
+}
+
+.Txt {
+    padding: 0 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+    width: 910px;
+    color: #e1d9cb;
+}
+
+.Txt h2 {
+    width: 990px;
+    font-size: 210px;
+    letter-spacing: -7px;
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: "Oswald", sans-serif;
+}
+
+.textBox {
+    position: absolute;
+    width: 160px;
+    top: 90px;
+    right: -30px;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    font-family: "Noto Sans TC", "微軟正黑體", sans-serif;
+}
+
+.textBox .title {
+    padding: 0;
+    margin-bottom: 8px;
+    font-family: "Noto Sans TC", "微軟正黑體", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.textBox p {
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 1.6;
+}
+
+.rightBox {
+    position: absolute;
+    top: 20px;
+    right: -25px;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    font-family: serif;
+    letter-spacing: 1px;
+    width: 155px;
+    height: 52px;
+}
+
+.rightBox:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 5px;
+    background-color: #e1d9cb;
+}
+
+.leftBox {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "微軟正黑體", sans-serif;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+    letter-spacing: 3px;
+}
+
+.bottomBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottomBox .left {
+    min-width: 200px;
+    width: 230px;
+    padding-left: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.bottomBox .mid {
+    margin-top: 5px;
+    padding-top: 35px;
+    height: 60px;
+    font-size: 23px;
+    font-weight: 700;
+    font-family: "微軟正黑體", sans-serif;
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+.bottomBox .mid:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #e1d9cb;
+}
+
+.bottomBox .right {
+    min-width: 200px;
+    width: 230px;
+    padding-left: 20px;
+    font-size: 26px;
+    font-weight: 300;
+    font-family: serif;
+    font-style: italic;
+    opacity: 0.5;
+    letter-spacing: 1px;
+}
+
+.banner .milkteabottle {
+    width: 100%;
+    max-width: 780px;
+    height: auto;
+    top: 0px;
+    left: 50%;
+    filter: blur(0.5px);
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.banner .leaf {
+    height: auto;
+    opacity: 0.8;
+    filter: blur(2px);
+}
+
+.banner .leaf1 {
+    width: 150px;
+    top: 220px;
+    left: 310px;
+}
+
+.banner .leaf2 {
+    width: 240px;
+    bottom: 120px;
+    left: -50px;
+    transform: rotateY(180deg) rotateZ(60deg);
+}
+
+.banner .leaf3 {
+    width: 120px;
+    top: 100px;
+    right: 350px;
+    transform: rotateY(180deg) rotateZ(15deg);
+}
+
+.banner .leaf4 {
+    width: 180px;
+    bottom: 250px;
+    right: 310px;
+    transform: rotateZ(25deg);
+}
+
+.banner .leaf5 {
+    width: 270px;
+    bottom: 0px;
+    right: 20px;
+    transform: rotateY(180deg) rotateZ(15deg);
+}
+
+.banner .scrollDown {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50px);
+    color: #E1D9CB;
+}
+
+.banner .scrollDown p {
+    position: relative;
+}
+
+.animate__animated.animate__bounce {
+    --animate-delay: 2;
+}
+
+.banner .scrollDown p:before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    background: black;
+    border: 1px solid #E1D9CB;
+    transform: translate(-50%) rotateZ(45deg);
+    z-index: 2;
+}
+
+.banner .scrollDown p:after {
+    content: "";
+    position: absolute;
+    top: 37px;
+    left: 50%;
+    width: 140px;
+    height: 1px;
+    background: #E1D9CB;
+    transform: translate(-50%);
+}
+
+/*  main */
+.main {
+    /* background-color: black; */
+    padding: 0;
+}
+
+/* about */
+.about {
+    background: url("https://ik.imagekit.io/tvlk/blog/2022/08/doi-che-cau-dat-cover.jpg?tr=dpr-1.5,h-359,q-40,w-1158") no-repeat top left;
+    background-size: cover;
+    height: 80vh;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+.about:after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.about__right,
+.about__left {
+    z-index: 10;
+    padding: 0;
+}
+
+.about__left {
+    color: #E1D9CB;
+    padding-left: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__left .group {
+    max-width: 400px;
+    height: 70%;
+    margin: auto;
+}
+
+.group .shake {
+    font-family: serif;
+}
+
+.group .shake:before {
+    content: "";
+    position: absolute;
+    left: 150px;
+    top: 43px;
+    width: calc(100% - 150px);
+    height: 1px;
+    background-color: rgba(200, 191, 177, 0.1);
+}
+
+.group .shake:after {
+    content: "";
+    position: absolute;
+    left: 160px;
+    top: 8%;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgba(200, 191, 177, 0.3);
+    box-sizing: border-box;
+    transform-origin: left top;
+    transform: rotate(135deg);
+}
+
+.group .aboutgoda {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+}
+
+.group .definition {
+    font-size: 18px;
+    font-family: "Noto Sans TC", "微軟正黑體", sans-serif;
+}
+
+.group .abouttext {
+    font-size: 14px;
+    width: 350px;
+    font-family: "Noto Sans TC", "微軟正黑體", sans-serif;
+    text-align: end;
+}
+
+.group .btn {
+    border-color: #E1D9CB;
+    color: #E1D9CB;
+    border-radius: 0;
+    width: 150px;
+    font-size: 10px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.group .btn:hover,
+.group .btn:focus {
+    background-color: black;
+    color: black;
+    box-shadow: inset 150px 0 0 0 #E1D9CB;
+}
+
+.middle__img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-30%);
+    bottom: 0;
+    width: fit-content;
+    z-index: 10;
+}
+
+.middle__img img {
+    width: 300px;
+}
+
+.about__right {
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.about__right img {
+    width: 100%;
+    margin-right: -20px;
+}
+
+.ice__cube {
+    position: absolute;
+    z-index: 10;
+}
+
+.ice {
+    position: absolute;
+    max-width: 100%;
+}
+
+.ice1 {
+    bottom: -320px;
+    left: 20px;
+}
+
+.ice2 {
+    bottom: -300px;
+    left: 40%;
+}
+
+.ice3 {
+    bottom: -280px;
+    left: 70%;
+}
+
+.ice4 {
+    bottom: -330px;
+    left: 65%;
+}
+
+/* product */
+.product {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    background: url("https://nonbaohiemdep.vn/wp-content/uploads/2022/10/doi-che-long-coc-2.jpg.webp") no-repeat top left;
+    background-size: cover;
+}
+
+.product:after {
+    content: "";
+    background-color: black;
+    opacity: 0.78;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.product>div {
+    height: 90%;
+    padding: 0;
+}
+
+.product__left__img,
+.product__left__prd {
+    width: 80%;
+    z-index: 10;
+}
+
+.product__left__img {
+    background-color: #EFEAE5;
+}
+
+.product__left__img .top {
+    height: 85%;
+    width: 100%;
+}
+
+.product__left__img .top .top__inside {
+    width: 70%;
+    text-align: center;
+}
+
+.product__left__img .top .top__inside .heading {
+    color: #a29588;
+    font-style: italic;
+    font-family: serif;
+    margin-top: 20px;
+}
+
+.product__left__img .top .top__inside .title {
+    color: #b3a597;
+    font-weight: 700;
+    font-size: 50px;
+    font-family: "Oswald", sans-serif;
+    line-height: 32px;
+}
+
+.product__left__img .top .top__inside .noting {
+    color: #94887c;
+    font-size: 12px;
+    font-family: "Oswald", sans-serif;
+}
+
+.product__left__img .top .top__inside .producttext {
+    color: #a09385;
+    font-size: 13px;
+    font-family: "Noto Sans TC", "微軟正黑體", sans-serif;
+    max-width: 400px;
+    margin-top: 00px;
+}
+
+.product__left__img .top .top__inside img {
+    max-width: 100%;
+}
+
+.product__left__img .bottom {
+    background-color: #A29588;
+    height: 15%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 4.6% bottom, 23.5% bottom, 42.5% bottom, 61% bottom;
+    background-image: url("https://www.dingtea.com/images/proBtn01.png"), url("https://www.dingtea.com/images/proBtn02.png"), url("https://www.dingtea.com/images/proBtn03.png"), url("https://www.dingtea.com/images/proBtn04.png");
+    background-size: 13%;
+    position: relative;
+}
+
+.product__left__img .bottom .bottom__text {
+    width: 30%;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    position: absolute;
+    right: 0px;
+    color: #C8BFB1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.bottom__text p {
+    margin: 0;
+}
+
+.product__right__prd {
+    background-color: transparent;
+    width: 80%;
+}
+
+.product__right__prd--top {
+    text-align: end;
+    z-index: 10;
+    position: relative;
+}
+
+.product__right__prd--top .heading {
+    color: #A5A199;
+    /* font-style: italic; */
+    font-family: serif;
+    margin-top: 25px;
+    font-weight: 500;
+}
+
+.product__right__prd--top .title {
+    color: #C8BFB1;
+    font-weight: 700;
+    font-size: 50px;
+    font-family: "Oswald", sans-serif;
+    line-height: 37px;
+}
+
+.product__right__prd--top .noting {
+    color: #C8BFB1;
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+}
+
+.product__right__prd--bottom {
+    height: 70%;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: relative;
+}
+
+.product__right__prd--bottom--left {
+    background-color: rgb(26, 26, 26);
+    padding: 0;
+    padding: 50px;
+    color: #C8BFB1;
+}
+
+.product__right__prd--bottom--left h2 {
+    font-size: 20px;
+}
+
+.product__right__prd--bottom--left button {
+    color: #ffffff;
+    background-color: black;
+    font-size: 13px;
+    font-weight: 600;
+    height: 45px;
+}
+
+.product__right__prd--bottom--right {
+    background-color: rgb(44, 44, 44);
+}
+
+.product__right__prd--bottom--right img {
+    max-width: 130px;
+    width: 100%;
+}
+
+/* location */
+.location {
+    position: relative;
+}
+
+.location:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 2;
+    top: 0;
+    opacity: 0.8;
+}
+
+.location__top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+}
+
+.location__top--left {
+    height: 80%;
+    max-width: 800px;
+    width: 100%;
+}
+
+.location__top--left .heading {
+    color: #A5A199;
+    font-style: italic;
+    font-family: serif;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.location__top--left .title {
+    color: #C8BFB1;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: "Oswald", sans-serif;
+    max-width: 450px;
+}
+
+.location__top--left .noting {
+    color: #C8BFB1;
+    font-size: 18px;
+    font-family: "Oswald", sans-serif;
+    max-width: 480px;
+}
+
+.location__top--right {
+    height: 610px;
+    max-width: 400px;
+    width: 100%;
+    position: absolute;
+    top: -30px;
+    left: 60%;
+    background-color: #C8BFB1;
+}
+
+.location__top--right .carousel {
+    height: fit-content;
+}
+
+.location__bottom--top .heading {
+    color: #9e9686;
+    font-style: italic;
+    font-family: serif;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.location__bottom--top .title {
+    color: #877a66;
+    font-weight: 700;
+    font-size: 38px;
+    font-family: "Oswald", sans-serif;
+    max-width: 450px;
+}
+
+.location__bottom--top .noting {
+    color: #8d857a;
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+    max-width: 480px;
+}
+
+.carousel-item.location__img {
+    max-width: 300px;
+    max-height: 240px;
+    margin: 0 auto;
+}
+
+.carousel_item.location__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.location__bottom--lastText {
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    color: #6d6257;
+    position: relative;
+}
+
+.location__bottom--lastText:before {
+    content: "";
+    width: 80%;
+    height: 1px;
+    color: #5d5146;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+}
+
+.location__bottom--lastText .btn {
+    border-color: #94887c;
+    color: black;
+    width: 200px;
+    font-size: 14px;
+}
+
+/* footer */
+.footer {
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #212121;
+    color: white;
+    height: 300px;
+}
+
+.footer .wrap {
+    max-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer__logo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.footer__right {
+    width: calc(100% - 140px);
+    margin-left: 30px;
+}
+
+.footer__bottom {
+    position: relative;
+}
+
+.footer__bottom:after {
+    content: " ";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(136, 136, 132);
+    position: absolute;
+    top: -15%;
+    left: 0;
+}
+
+.footer__top__left,
+.footer__bottom__left {
+    max-width: 500px;
+    width: 100%;
+}
+
+.footer__top__left .inspiration,
+.footer__top__right {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "Noto Sans TC", "微軟正黑體", sans-serif;
+    color: rgb(136, 136, 132);
+}
+
+.footer__top__left a span {
+    color: #C8BFB1;
+}
+
+.footer__top__right {
+    text-align: start;
+}
+
+.footer__top__right a span {
+    text-decoration: none;
+    color: rgb(87, 87, 75);
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Noto Sans TC", "微軟正黑體", sans-serif;
+    cursor: pointer;
+}
+
+.footer__bottom__left p {
+    font-size: 13px;
+    color: #c8beb3;
+    letter-spacing: 0px;
+}
+
+.footer__bottom__left p span {
+    color: white;
+    font-size: 15px;
+}
+
+.footer__bottom__right i {
+    margin: 10px;
+    font-size: 25px;
+    color: #ada598;
+}
+
+button .btn:hover {
+    background-color: #212121;
+    color: #C8BFB1;
+}
+
+
+.btn__location:hover,
+.btn__location:focus {
+    background-color: black;
+    color: #a6a689;
+    box-shadow: inset 200px 0 0 0 black;
+}
